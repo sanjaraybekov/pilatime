@@ -1,2 +1,12 @@
-/node_modules
+node_modules
+build
 package-lock.json
+yarn.lock
+yarn-error.log
+tester.js
+/test
+.env.local
+.idea
+.env
+.DS_Store
+.next
