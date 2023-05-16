@@ -1,0 +1,186 @@
+.fc-today-button {
+  position: relative;
+  right: 400px;
+  width: 80px;
+}
+
+.fc-next-button {
+  position: relative;
+  right: 400px;
+}
+
+.fc-prev-button {
+  position: relative;
+  left: 400px;
+  background-color: #fff;
+  color: red;
+}
+
+.fc-button-primary {
+  background-color: #fff !important;
+  border-color: #7832dc !important;
+
+  color: var(--fc-button-text-color, rgb(0, 0, 0)) !important;
+  border: none !important;
+}
+
+.fc-direction-ltr .fc-toolbar > * > :not(:first-child) {
+  background-color: #fff !important;
+  border: 1px solid #7832dc !important;
+  color: #7832dc !important;
+  border-radius: 15px;
+}
+
+.fc-scroller {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+}
+
+.fc-scroller::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.fc-scroller::-webkit-scrollbar {
+  width: 10px;
+}
+.fc-scroller::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #f3902500;
+}
+.fc .fc-timegrid-slot {
+  height: 30px;
+}
+.fc-timegrid-event, .fc-daygrid-event /*fc-daygrid-block-event fc-h-event fc-event fc-event-draggable fc-event-resizable fc-event-start fc-event-end fc-event-today*/ {
+  border-radius: 15px;
+}
+
+.fc-event-future {
+  background-color: #ae84ea !important;
+}
+
+.custom-date h1 {
+  font-size: 18px;
+}
+
+.custom-date h2 {
+  font-size: 12px;
+}
+
+.custom-date {
+  color: #707070;
+}
+
+/*.fc-timegrid-slots*/
+.fc-timegrid-slot-minor {
+  border-top-color: transparent !important;
+}
+.fc-timegrid-slot-label-frame {
+  text-align: left !important;
+}
+
+tr:not(:first-child) .fc-timegrid-slot-label-frame {
+  transform: translate3d(-5px, -15px, 0);
+  background-color: #ffffff;
+  text-align: center !important;
+}
+
+.fc-timegrid-now-indicator-arrow {
+  display: none;
+}
+
+.fc-timegrid-now-indicator-line:after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: red;
+  top: -4px;
+  /*left: -4px;*/
+  z-index: 30;
+}
+
+.fc-col-header {
+  border-color: #dddddd;
+  border-style: solid !important;
+  border-width: 0px 0 1px 0px;
+}
+.fc-col-header th {
+  border-width: 0;
+}
+.fc-theme-standard .fc-scrollgrid {
+  border-top: 1px solid #ebebeb;
+  border-left: none;
+}
+
+.css-56xsb0 i {
+  position: relative;
+  top: -40px;
+  left: 20%;
+  font: normal normal normal 11px/14px Pretendard;
+}
+.css-gg4vpm b {
+  text-align: center;
+  font: normal normal normal 11px/14px Pretendard;
+  padding-left: 15px;
+}
+.fc .fc-timegrid-col.fc-day-today {
+  background-color: #fff;
+}
+
+.custom-col {
+  position: relative;
+  width: 3px;
+  background-color: #fff;
+  height: 1000px;
+  right: 2px;
+}
+.custom-row {
+  height: 3px;
+  width: 1270px;
+  background-color: #fff;
+  position: relative;
+  top: -2px;
+}
+
+.custom-date h1, custom-date h2{
+  font-weight: 400;
+  color:#707070;
+}
+
+.MuiPickersPopper-paper,
+.MuiCalendarOrClockPicker-root>div,
+.MuiCalendarPicker-root{
+  /*width: 308px !important;*/
+}
+.MuiCalendarOrClockPicker-root~.MuiDialogActions-root{
+  padding: 0;
+}
+.MuiCalendarOrClockPicker-root~.MuiDialogActions-root button{
+  position: absolute;
+  top: 20px;
+  right: 70px;
+  text-transform: lowercase;
+  line-height: 1;
+  font-size: 12px;
+  font-weight: 300;
+  border:1px solid #c9adf1;
+  padding: 5px 10px;
+  border-radius: 100px;
+}
+.MuiPickersArrowSwitcher-root>div{
+  background-color: red;
+  width: 0;
+}
+.MuiPickersDay-root.MuiPickersDay-dayWithMargin{
+  font-size: 13px;
+  width: 32px;
+  height: 32px;
+  margin: 0 4px;
+}
+.MuiPickersDay-root.MuiPickersDay-dayWithMargin.MuiPickersDay-today:not(.Mui-selected){
+  border-color: #c9adf1;
+  color: #c9adf1;
+}
+.MuiPickersDay-root.MuiPickersDay-dayWithMargin.MuiPickersDay-dayOutsideMonth{
+  color: #C6C6C6;
+}

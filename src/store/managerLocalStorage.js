@@ -1,12 +1,3 @@
-const version = require("../version.json");
-
-export function clearLocalStorageNewVersionApp(store) {
-	if (localStorage.getItem("version") !== version.version)
-		localStorage.clear();
-	localStorage.setItem("version", version.version);
-	return store;
-}
-
 /**
  * With this function you can easly write your state to localstorage. Every change of state.
  * @param {{key: string}} config Object with prop key for localstorage key

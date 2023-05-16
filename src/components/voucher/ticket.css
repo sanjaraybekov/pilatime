@@ -1,0 +1,9 @@
+.ck-editor__editable {
+  min-height: 400px;
+}
+
+.ck.ck-editor__main > .ck-editor__editable:not(.ck-focused) {
+  border-color: #ddd;
+  text-align: center;
+  padding-top: 10%;
+}

@@ -1,21 +1,37 @@
-import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-// REDUX
-import { Provider } from "react-redux";
-import store from "./store";
+import Routing from "./routes/Routing";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 
-import MainView from "./views";
-
-export default function App() {
-	return (
-		<Provider store={store}>
-			<BrowserRouter basename={"/"}>
-				<Switch>
-					<Route path={"/"}>
-						<MainView />
-					</Route>
-				</Switch>
-			</BrowserRouter>
-		</Provider>
-	);
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#935be3",
+      second:"#ae84ea"
+    },
+    secondary: {
+      main: "#c9adf1",
+      second: "#faf7fe"
+    },
+    info: {
+      main: "#a1a1a1",
+      second: "#f7f7f7"
+    },
+  },
+  transitions: {
+    duration: {
+        enteringScreen: 500,
+        leavingScreen: 500,
+    }
 }
+});
+
+function App() {
+  return (
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        <Routing />
+      </div>
+    </ThemeProvider>
+  );
+}
+
+export default App;
